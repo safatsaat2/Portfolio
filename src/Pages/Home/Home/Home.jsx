@@ -1,9 +1,11 @@
+import Navbar from "../Navbar/Navbar";
 
 const Home = () => {
     return (
         <div className="text-2xl">
-            <h1 className="text-xl font-header">Hi</h1>
-            <h1 className="text-xl font-para">ehi</h1>
+            <Navbar></Navbar>
+            <div className="h-screen bg-slate-400"></div>
+            <div id="ok" name='ok' className="text-5xl">Hi</div>
         </div>
     );
 };
