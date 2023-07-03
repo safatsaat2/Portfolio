@@ -56,9 +56,16 @@ const Navbar = () => {
             >
               Skills
             </Link>
-            <li className="ml-5 cursor-pointer hover:font-bold hover:bg-word hover:text-bg transition-all duration-500 px-3 py-3 rounded-md">
+            <Link
+              to="project"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              className="ml-5 cursor-pointer hover:font-bold hover:bg-word hover:text-bg transition-all duration-500 px-3 py-3 rounded-md"
+            >
               Projects
-            </li>
+            </Link>
             <li className="ml-5 cursor-pointer hover:font-bold hover:bg-word hover:text-bg transition-all duration-500 px-3 py-3 rounded-md">
               Contacts
             </li>

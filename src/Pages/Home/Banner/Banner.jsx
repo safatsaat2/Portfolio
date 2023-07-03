@@ -91,7 +91,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="hidden lg:block">
+      <div className=" lg:block">
         <Particles
           id="tsparticles"
           init={particlesInit}

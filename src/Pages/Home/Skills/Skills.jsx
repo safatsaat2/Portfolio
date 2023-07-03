@@ -7,7 +7,7 @@ const Skills = () => {
     <div id="skill" className="py-40 bg-bg">
       <Title heading="Skills" />
 
-      <div className="grid grid-cols-1 mt-10 mb-32 lg:grid-cols-5 gap-10 lg:gap-y-10 max-w-[1280px] mx-auto">
+      <div className="grid grid-cols-1 mt-20 mb-32 lg:grid-cols-5 gap-10 lg:gap-y-10 max-w-[1280px] mx-auto">
         <div
           className="flex flex-col gap-2 items-center"
           data-aos="fade-right" data-aos-duration="2000"
