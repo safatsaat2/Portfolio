@@ -66,14 +66,21 @@ const Navbar = () => {
             >
               Projects
             </Link>
-            <li className="ml-5 cursor-pointer hover:font-bold hover:bg-word hover:text-bg transition-all duration-500 px-3 py-3 rounded-md">
-              Contacts
-            </li>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              className="ml-5 cursor-pointer hover:font-bold hover:bg-word hover:text-bg transition-all duration-500 px-3 py-3 rounded-md"
+            >
+              Contact
+            </Link>
           </ul>
         </div>
 
         <button className="text-xl px-3 py-1 rounded bg-word text-bg font-medium hover:text-word hover:bg-bg transition-all duration-500">
-          Hire Now
+          <a href="mailto:sakibsafat47@gmail.com">Hire Now</a>
         </button>
       </div>
       <div
@@ -122,10 +129,26 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className=" cursor-pointer hover:font-bold hover:bg-bg w-full hover:text-word px-3 py-3 rounded-md">
-                Projects
+              <Link
+                  to="project"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={1000}
+                >
+                  Projects
+                </Link>
               </li>
               <li className=" cursor-pointer hover:font-bold hover:bg-bg w-full hover:text-word px-3 py-3 rounded-md">
-                Contacts
+              <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                >
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
