@@ -5,13 +5,7 @@ export default {
     colors: {
       'bg': '#E8D5C4',
       'word': '#564E47',
-      'pink': '#ff49db',
-      'orange': '#ff7849',
-      'green': '#13ce66',
-      'yellow': '#ffc82c',
-      'gray-dark': '#273444',
-      'gray': '#8492a6',
-      'gray-light': '#d3dce6',
+      'bg2': '#FEF9F5'
     },
     fontFamily: {
       'header': ['Montserrat', 'sans-serif'],

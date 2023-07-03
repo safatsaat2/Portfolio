@@ -5,17 +5,17 @@ import { Icon } from "@iconify/react";
 import { TypeAnimation } from "react-type-animation";
 
 const Banner = () => {
-  const particlesInit = useCallback(async (engine) => {
-    console.log(engine);
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    await loadFull(engine);
-  }, []);
+    const particlesInit = useCallback(async (engine) => {
+      console.log(engine);
+      // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+      // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+      // starting from v2 you can add only the features you need reducing the bundle size
+      await loadFull(engine);
+    }, []);
 
-  const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
-  }, []);
+    const particlesLoaded = useCallback(async (container) => {
+      await console.log(container);
+    }, []);
 
   return (
     <>
@@ -24,21 +24,32 @@ const Banner = () => {
           <div className="flex flex-col lg:flex-row items-center gap-x-1">
             <div className="flex lg:flex-col">
               <a target="blank" href="https://github.com/safatsaat2">
-                <Icon className="text-word text-4xl transition-all duration-500 hover:-translate-y-1" icon="mdi:github" />
+                <Icon
+                  className="text-word text-4xl transition-all duration-500 hover:-translate-y-1"
+                  icon="mdi:github"
+                />
               </a>
               <a target="blank" href="mailto:sakibsafat47@gmail.com">
-                <Icon className="text-word text-4xl transition-all duration-500 hover:-translate-y-1" icon="mdi:gmail" />
+                <Icon
+                  className="text-word text-4xl transition-all duration-500 hover:-translate-y-1"
+                  icon="mdi:gmail"
+                />
               </a>
               <a
                 target="blank"
                 href="https://www.linkedin.com/in/sakibur-safat/"
               >
-                <Icon className="text-word text-4xl transition-all duration-500 hover:-translate-y-1" icon="mdi:linkedin" />
+                <Icon
+                  className="text-word text-4xl transition-all duration-500 hover:-translate-y-1"
+                  icon="mdi:linkedin"
+                />
               </a>
             </div>
 
             <div>
-              <p className="text-word text-sm lg:text-xl mt-2 lg:mt-4">Hi, I am</p>
+              <p className="text-word text-sm lg:text-xl mt-2 lg:mt-4">
+                Hi, I am
+              </p>
               <h1 className="lg:text-7xl my-2 lg:my-4 font-semibold text-word">
                 SAKIBUR RAHMAN SAFAT
               </h1>
@@ -49,6 +60,8 @@ const Banner = () => {
                   3000, // Waits 1s
                   "Front-End DEVELOPER", // Deletes 'One' and types 'Two'
                   3000, // Waits 2s
+                  "TECH ENTHUSIAST",
+                  3000,
                 ]}
                 wrapper="span"
                 cursor={true}
@@ -58,7 +71,10 @@ const Banner = () => {
 
               <div>
                 <button className="text-xl px-3 py-1 mb-6 rounded bg-word text-bg font-medium hover:text-word hover:bg-bg transition-all duration-500">
-                  <a href="https://drive.google.com/drive/folders/1MyWQ2QSq_cBTuff83GXoM6uWDPpmh472?usp=sharing" target="blank">
+                  <a
+                    href="https://drive.google.com/drive/folders/1MyWQ2QSq_cBTuff83GXoM6uWDPpmh472?usp=sharing"
+                    target="blank"
+                  >
                     Download My Resume
                   </a>
                 </button>
@@ -75,80 +91,88 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <Particles
-        id="tsparticles"
-        init={particlesInit}
-        loaded={particlesLoaded}
-        options={{
-          fpsLimit: 120,
-          interactivity: {
-            events: {
-              onClick: {
+      <div className="hidden lg:block">
+        <Particles
+          id="tsparticles"
+          init={particlesInit}
+          loaded={particlesLoaded}
+          options={{
+            fpsLimit: 120,
+            fullScreen:{
                 enable: true,
-                mode: "push",
+                zIndex: 1,
+            },
+            interactivity: {
+              events: {
+                onClick: {
+                  enable: false,
+                  mode: "push",
+                },
+                onHover: {
+                  enable: true,
+                  mode: "repulse",
+                },
+                resize: true,
               },
-              onHover: {
+              modes: {
+                push: {
+                  quantity: 2,
+                },
+                repulse: {
+                  distance: 100,
+                  duration: 0.4,
+                },
+              },
+            },
+            particles: {
+              color: {
+                value: "#564E47",
+              },
+              links: {
+                color: "#ffffff",
+                distance: 150,
                 enable: true,
-                mode: "repulse",
+                opacity: 0.5,
+                width: 1,
               },
-              resize: true,
-            },
-            modes: {
-              push: {
-                quantity: 2,
-              },
-              repulse: {
-                distance: 100,
-                duration: 0.4,
-              },
-            },
-          },
-          particles: {
-            color: {
-              value: "#564E47",
-            },
-            links: {
-              color: "#ffffff",
-              distance: 150,
-              enable: true,
-              opacity: 0.5,
-              width: 1,
-            },
-            collisions: {
-              enable: true,
-            },
-            move: {
-              direction: "none",
-              enable: true,
-              outModes: {
-                default: "bounce",
-              },
-              random: false,
-              speed: 2,
-              straight: false,
-            },
-            number: {
-              density: {
+              collisions: {
                 enable: true,
-                area: 200,
               },
-              value: 10,
+              move: {
+                direction: "none",
+                enable: true,
+                outModes: {
+                  default: "bounce",
+                },
+                random: false,
+                speed: 2,
+                straight: false,
+              },
+              number: {
+                density: {
+                  enable: true,
+                  area: 200,
+                },
+                value: 10,
+              },
+              opacity: {
+                value: 0.5,
+              },
+              shape: {
+                type: "circle",
+              },
+              size: {
+                value: { min: 1, max: 5 },
+              },
             },
-            opacity: {
-              value: 0.5,
-            },
-            shape: {
-              type: "circle",
-            },
-            size: {
-              value: { min: 1, max: 5 },
-            },
-          },
-          detectRetina: true,
-        }}
-      />
+            detectRetina: true,
+          }}
+        />
+      </div>
     </>
   );
 };
 
 export default Banner;
+
+

@@ -8,7 +8,7 @@ const Navbar = () => {
   const [menu, setMenu] = useState(true);
   console.log(menu);
   return (
-    <div className="fixed  w-full bg-word bg-opacity-30">
+    <div className="fixed shadow-md w-full bg-word bg-opacity-30">
       <div className="max-w-[1280px] flex justify-between items-center mx-auto py-2">
         <div onClick={() => setMenu(!menu)} className="lg:hidden ml-2">
           {menu ? (
@@ -18,19 +18,44 @@ const Navbar = () => {
           )}
         </div>
 
-        <img className="w-10 ml-5 lg:ml-0" src="https://i.ibb.co/xLz4B10/Frame-4.png" alt="" />
+        <img
+          className="w-10 ml-5 lg:ml-0"
+          src="https://i.ibb.co/xLz4B10/Frame-4.png"
+          alt=""
+        />
 
         <div className="flex hidden lg:block mx-auto max-w-[1280px]">
           <ul className="flex font-header font-semibold text-word text-base">
-            <Link to="banner" spy={true} smooth={true} offset={0} duration={500} className="ml-5 cursor-pointer hover:font-bold hover:bg-word hover:text-bg transition-all duration-500 px-3 py-3 rounded-md">
+            <Link
+              to="banner"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              className="ml-5 cursor-pointer hover:font-bold hover:bg-word hover:text-bg transition-all duration-500 px-3 py-3 rounded-md"
+            >
               Home
             </Link>
-            <Link to="ok" spy={true} smooth={true} offset={50} duration={500} className="ml-5 cursor-pointer hover:font-bold hover:bg-word hover:text-bg transition-all duration-500 px-3 py-3 rounded-md">
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              className="ml-5 cursor-pointer hover:font-bold hover:bg-word hover:text-bg transition-all duration-500 px-3 py-3 rounded-md"
+            >
               About Me
             </Link>
-            <li className="ml-5 cursor-pointer hover:font-bold hover:bg-word hover:text-bg transition-all duration-500 px-3 py-3 rounded-md">
+            <Link
+              to="skill"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              className="ml-5 cursor-pointer hover:font-bold hover:bg-word hover:text-bg transition-all duration-500 px-3 py-3 rounded-md"
+            >
               Skills
-            </li>
+            </Link>
             <li className="ml-5 cursor-pointer hover:font-bold hover:bg-word hover:text-bg transition-all duration-500 px-3 py-3 rounded-md">
               Projects
             </li>
@@ -57,13 +82,37 @@ const Navbar = () => {
           <div>
             <ul className="font-header font-semibold absolute text-bg text-base">
               <li className=" cursor-pointer hover:font-bold hover:bg-bg w-full hover:text-word px-3 py-3 rounded-md">
-                Home
+                <Link
+                  to="banner"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                >
+                  Home
+                </Link>
               </li>
               <li className=" cursor-pointer hover:font-bold hover:bg-bg w-full hover:text-word px-3 py-3 rounded-md">
-                About Me
+                <Link
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={1000}
+                >
+                  About Me
+                </Link>
               </li>
               <li className=" cursor-pointer hover:font-bold hover:bg-bg w-full hover:text-word px-3 py-3 rounded-md">
-                Skills
+              <Link
+                  to="skill"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={1000}
+                >
+                  Skills
+                </Link>
               </li>
               <li className=" cursor-pointer hover:font-bold hover:bg-bg w-full hover:text-word px-3 py-3 rounded-md">
                 Projects
