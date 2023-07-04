@@ -72,8 +72,7 @@ const Banner = () => {
               <div>
                 <button className="text-xl px-3 py-1 mb-6 rounded bg-word text-bg font-medium hover:text-word hover:bg-bg transition-all duration-500">
                   <a
-                    href="https://drive.google.com/drive/folders/1MyWQ2QSq_cBTuff83GXoM6uWDPpmh472?usp=sharing"
-                    target="blank"
+                    href="../../../../public/resume (2).pdf"
                   >
                     Download My Resume
                   </a>
