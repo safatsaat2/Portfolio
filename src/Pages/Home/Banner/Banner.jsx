@@ -72,7 +72,8 @@ const Banner = () => {
               <div>
                 <button className="text-xl px-3 py-1 mb-6 rounded bg-word text-bg font-medium hover:text-word hover:bg-bg transition-all duration-500">
                   <a
-                    href="../../../../public/resume (2).pdf"
+                    href="../../../../public/resume.pdf"
+                    download
                   >
                     Download My Resume
                   </a>

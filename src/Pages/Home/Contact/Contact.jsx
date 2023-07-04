@@ -13,7 +13,7 @@ const Contact = () => {
           />
         </Link>
 
-        <button className="text-xl px-3 py-1 rounded bg-word text-bg font-medium hover:text-word hover:bg-bg transition-all duration-500"><a href="../../../../public/resume (2).pdf">Download Resume</a></button>
+        <button className="text-xl px-3 py-1 rounded bg-word text-bg font-medium hover:text-word hover:bg-bg transition-all duration-500"><a href="../../../../public/resume.pdf" download>Download Resume</a></button>
         
         <div className="flex mr-5">
           <a target="blank" href="https://github.com/safatsaat2">
