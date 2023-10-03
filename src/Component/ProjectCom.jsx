@@ -14,15 +14,15 @@ const ProjectCom = ({imgLink, name, madeWith, live, client, server}) => {
           Made with {madeWith}
         </p>
         <div className="flex justify-between text-sm mx-2">
-          <button className="border border-bg hover:bg-word hover:text-bg px-4 py-2 font-medium rounded-md">
-           <a target='blank' href={live}>Live Site</a>
-          </button>
-          <button className="border border-bg hover:bg-word hover:text-bg px-4 py-2 font-medium rounded-md">
-            <a target='blank' href={client}>Client Side</a>
-          </button>
-          {server === "" ? <></> : <button className="border border-bg hover:bg-word hover:text-bg px-4 py-2 font-medium rounded-md">
-            <a target='blank' href={server}>Server Side</a>
-          </button>}
+        <a target='blank' href={live}> <button className="border border-bg hover:bg-word hover:text-bg px-4 py-2 font-medium rounded-md">
+           Live Site
+          </button></a>
+          <a target='blank' href={client}> <button className="border border-bg hover:bg-word hover:text-bg px-4 py-2 font-medium rounded-md">
+            Client Side
+          </button></a>
+          {server === "" ? <></> : <a target='blank' href={server}><button className="border border-bg hover:bg-word hover:text-bg px-4 py-2 font-medium rounded-md">
+            Server Side
+          </button></a>}
         </div>
       </div>
     </div>

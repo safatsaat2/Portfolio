@@ -22,10 +22,50 @@ const Skills = () => {
           className="flex flex-col gap-2 items-center"
           data-aos="fade-right" data-aos-duration="2000"
         >
+          <Icon className="text-6xl" icon="logos:typescript-icon" />
+          <p className="text-sm text-word font-header font-bold">TYPESCRIPT</p>
+          <div className="w-full">
+            <ProgressBar height='16px' bgColor="#564E47" labelSize="12px" completed={75} />
+          </div>
+        </div>
+        <div
+          className="flex flex-col gap-2 items-center"
+          data-aos="fade-right" data-aos-duration="2000"
+        >
           <Icon className="text-6xl" icon="devicon:react-wordmark" />
           <p className="text-sm text-word font-header font-bold">REACT JS</p>
           <div className="w-full">
             <ProgressBar height='16px' bgColor="#564E47" labelSize="12px" completed={85} />
+          </div>
+        </div>
+        <div
+          className="flex flex-col gap-2 items-center"
+          data-aos="fade-up" data-aos-duration="2000"
+        >
+          <Icon className="text-6xl"  icon="logos:nodejs"/>
+          <p className="text-sm text-word font-header font-bold">NODE JS</p>
+          <div className="w-full">
+            <ProgressBar height='16px' bgColor="#564E47" labelSize="12px" completed={75} />
+          </div>
+        </div>
+        <div
+          className="flex flex-col gap-2 items-center"
+          data-aos="fade-up" data-aos-duration="2000"
+        >
+          <Icon className="text-6xl"  icon="skill-icons:expressjs-dark"/>
+          <p className="text-sm text-word font-header font-bold">EXPRESS JS</p>
+          <div className="w-full">
+            <ProgressBar height='16px' bgColor="#564E47" labelSize="12px" completed={75} />
+          </div>
+        </div>
+        <div
+          className="flex flex-col gap-2 items-center"
+          data-aos="fade-up" data-aos-duration="2000"
+        >
+          <Icon className="text-6xl"  icon="devicon:mongodb-wordmark" />
+          <p className="text-sm text-word font-header font-bold">MONGODB</p>
+          <div className="w-full">
+            <ProgressBar height='16px' bgColor="#564E47" labelSize="12px" completed={80} />
           </div>
         </div>
         <div
@@ -56,36 +96,6 @@ const Skills = () => {
           <p className="text-sm text-word font-header font-bold">FIREBASE AUTH</p>
           <div className="w-full">
             <ProgressBar height='16px' bgColor="#564E47" labelSize="12px" completed={85} />
-          </div>
-        </div>
-        <div
-          className="flex flex-col gap-2 items-center"
-          data-aos="fade-up" data-aos-duration="2000"
-        >
-          <Icon className="text-6xl"  icon="logos:nodejs"/>
-          <p className="text-sm text-word font-header font-bold">NODE JS</p>
-          <div className="w-full">
-            <ProgressBar height='16px' bgColor="#564E47" labelSize="12px" completed={65} />
-          </div>
-        </div>
-        <div
-          className="flex flex-col gap-2 items-center"
-          data-aos="fade-up" data-aos-duration="2000"
-        >
-          <Icon className="text-6xl"  icon="skill-icons:expressjs-dark"/>
-          <p className="text-sm text-word font-header font-bold">EXPRESS JS</p>
-          <div className="w-full">
-            <ProgressBar height='16px' bgColor="#564E47" labelSize="12px" completed={72} />
-          </div>
-        </div>
-        <div
-          className="flex flex-col gap-2 items-center"
-          data-aos="fade-up" data-aos-duration="2000"
-        >
-          <Icon className="text-6xl"  icon="devicon:mongodb-wordmark" />
-          <p className="text-sm text-word font-header font-bold">MONGODB</p>
-          <div className="w-full">
-            <ProgressBar height='16px' bgColor="#564E47" labelSize="12px" completed={80} />
           </div>
         </div>
         <div
