@@ -70,6 +70,16 @@ const Skills = () => {
         </div>
         <div
           className="flex flex-col gap-2 items-center"
+          data-aos="fade-up" data-aos-duration="2000"
+        >
+          <Icon className="text-6xl"  icon="devicon:jquery-wordmark" />
+          <p className="text-sm text-word font-header font-bold">JQUERY</p>
+          <div className="w-full">
+            <ProgressBar height='16px' bgColor="#564E47" labelSize="12px" completed={80} />
+          </div>
+        </div>
+        <div
+          className="flex flex-col gap-2 items-center"
           data-aos="fade-right" data-aos-duration="2000"
         >
           <Icon className="text-6xl" icon="logos:html-5"/>
