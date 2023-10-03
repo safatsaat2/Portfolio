@@ -1,10 +1,10 @@
 const ProjectCom = ({imgLink, name, madeWith, live, client, server}) => {
   return (
     <div>
-      <div className="text-word border rounded grid items-center justify-center py-2 border-bg w-full lg:w-[400px]">
-        <div className="img-container w-full mx-auto lg:w-[300px]">
+      <div className="text-word h-[600px] border rounded grid items-center justify-center pb-2 border-bg w-full lg:w-[400px]">
+        <div className="w-full">
           <img
-            className="w-full"
+            className="w-full px-2"
             src={imgLink}
             alt=""
           />
@@ -20,9 +20,9 @@ const ProjectCom = ({imgLink, name, madeWith, live, client, server}) => {
           <button className="border border-bg hover:bg-word hover:text-bg px-4 py-2 font-medium rounded-md">
             <a target='blank' href={client}>Client Side</a>
           </button>
-          <button className="border border-bg hover:bg-word hover:text-bg px-4 py-2 font-medium rounded-md">
+          {server === "" ? <></> : <button className="border border-bg hover:bg-word hover:text-bg px-4 py-2 font-medium rounded-md">
             <a target='blank' href={server}>Server Side</a>
-          </button>
+          </button>}
         </div>
       </div>
     </div>
